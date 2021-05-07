@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<!-- Created By CodingNepal -->
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bonona</title>
+
+    <!-- aos css cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+
+    <!-- google fonts cdn link  -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;400;500&family=Roboto:wght@100;300;400;500&display=swap" rel="stylesheet">
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="login.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+  <body>
+      <!-- header section starts  -->
+<div>
+    
+ <header>
+    <style scoped>@import 'style.css';</style>
+        <a href="#" class="logo"><img src="images/crane1.png" height=80px width=100px alt="crane"></a>
+
+        <div id="menu-bar" class="fas fa-palette"></div>
+
+        <nav class="navbar">
+            <ul>
+                <li><a href="index.html"data-after="Home">Home</a></li>
+                <li><a href="index.html #aboutus"data-after="About us">About us</a></li>
+                <li><a href="index.html #themap"data-after="The Map">The Map</a></li>
+                <li><a href="index.html #stealers"data-after="Stealers">Stealers</a></li>
+                <li><a href="index.html #ideas"data-after="Ideas">Ideas</a></li>
+                <li><a href="index.html #pingus"data-after="Ping Us">Ping Us</a></li>
+            </ul>
+        </nav>
+    
+</header>
+
+</div>
+
+<!-- header section ends -->
+
+    <div class="wrapper">
+      <div class="title-text">
+        <div class="title login">
+Login Form</div>
+<div class="title signup">
+Signup Form</div>
+</div>
+<div class="form-container">
+        <div class="slide-controls">
+          <input type="radio" name="slide" id="login" checked>
+          <input type="radio" name="slide" id="signup">
+          <label for="login" class="slide login">Login</label>
+          <label for="signup" class="slide signup">Signup</label>
+          <div class="slider-tab">
+</div>
+</div>
+<div class="form-inner">
+          <form action="index.html" class="login">
+            <div class="field">
+              <input type="text" placeholder="Username" required>
+            </div>
+<div class="field">
+              <input type="password" placeholder="Password" required>
+            </div>
+<div class="pass-link">
+<a href="#">Forgot password?</a></div>
+<div class="field btn">
+              <div class="btn-layer">
+</div>
+<input type="submit" value="Login">
+            </div>
+<div class="signup-link">
+Not a member? <a href="">Signup now</a></div>
+</form>
+<form action="index.html" class="signup">
+            <div class="field">
+              <input type="text" placeholder="Username" required>
+            </div>
+<div class="field">
+              <input type="password" placeholder="Password" required>
+            </div>
+<div class="field">
+              <input type="password" placeholder="Confirm password" required>
+            </div>
+<div class="field btn">
+              <div class="btn-layer">
+</div>
+<input type="submit" value="Signup">
+            </div>
+</form>
+</div>
+</div>
+</div>
+
+
+<script>
+      const loginText = document.querySelector(".title-text .login");
+      const loginForm = document.querySelector("form.login");
+      const loginBtn = document.querySelector("label.login");
+      const signupBtn = document.querySelector("label.signup");
+      const signupLink = document.querySelector("form .signup-link a");
+      signupBtn.onclick = (()=>{
+        loginForm.style.marginLeft = "-50%";
+        loginText.style.marginLeft = "-50%";
+      });
+      loginBtn.onclick = (()=>{
+        loginForm.style.marginLeft = "0%";
+        loginText.style.marginLeft = "0%";
+      });
+      signupLink.onclick = (()=>{
+        signupBtn.click();
+        return false;
+      });
+    </script>
+
+  </body>
+</html>
